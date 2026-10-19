@@ -1,0 +1,501 @@
+/* تنظیمات کلی */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 85px;
+}
+
+body {
+    margin: 0;
+    background-color: #101D36;
+    color: #FFFFFF;
+    font-family: Tahoma, Arial, sans-serif;
+    line-height: 1.9;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+h1, h2, h3, p {
+    margin-top: 0;
+}
+
+p {
+    color: #C7D0DF;
+}
+
+/* سربرگ */
+.header {
+    background-color: #101D36;
+    padding: 12px 16px;
+    border-bottom: 1px solid #293955;
+    h2{
+        margin-right: -15px;
+    }
+    span{
+        margin-right: -15px;
+    }
+}
+
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.brand img {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+}
+
+.brand h2 {
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+.brand span {
+    color: #E49C05;
+    font-size: 11px;
+}
+
+.nav {
+    display: flex;
+    gap: 18px;
+    overflow-x: auto;
+    padding: 14px 0 4px;
+    white-space: nowrap;
+}
+
+.nav a {
+    color: #D5DCE7;
+    font-size: 12px;
+}
+
+.nav a:hover {
+    color: #E49C05;
+}
+
+/* صفحه معرفی */
+.hero {
+    position: relative;
+    min-height: 460px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    padding: 35px 20px;
+}
+
+.hero-image {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.35;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 550px;
+}
+
+.eyebrow {
+    display: inline-block;
+    color: #E49C05;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.hero h1 {
+    font-size: 32px;
+    line-height: 1.8;
+    margin-bottom: 12px;
+}
+
+.hero p {
+    font-size: 14px;
+    margin-bottom: 24px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #E49C05;
+    color: #101D36;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 11px 22px;
+    border-radius: 8px;
+    transition: 0.2s;
+}
+
+.btn:hover {
+    background-color: #FFC247;
+}
+
+/* بخش‌های سایت */
+.section {
+    padding: 48px 16px;
+    scroll-margin-top: 20px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.section-title h2 {
+    font-size: 25px;
+    margin-bottom: 8px;
+}
+
+.section-title p {
+    font-size: 13px;
+}
+
+/* کارت خدمات */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+}
+
+.service-card {
+    background-color: #1B2A46;
+    border: 1px solid #293955;
+    border-radius: 12px;
+    overflow: hidden;
+    min-width: 0;
+    transition: transform 0.2s;
+}
+
+.service-card:hover {
+    transform: translateY(-4px);
+}
+
+.service-card img {
+    width: 100%;
+    height: 125px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 12px;
+}
+
+.card-content h3 {
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+.card-content p {
+    font-size: 11px;
+    line-height: 2;
+    margin-bottom: 0;
+}
+
+/* گالری */
+.gallery-section {
+    background-color: #14223B;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.gallery-grid img:first-child {
+    grid-column: 1 / -1;
+    height: 220px;
+}
+
+/* ساعات کاری */
+.hours-box {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #1B2A46;
+    border: 1px solid #293955;
+    border-radius: 14px;
+    padding: 24px 18px;
+}
+
+.hours-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 0;
+    border-bottom: 1px solid #33415B;
+    font-size: 13px;
+}
+
+.hours-row strong {
+    color: #E49C05;
+    white-space: nowrap;
+}
+
+.note {
+    font-size: 11px;
+    margin: 18px 0 0;
+}
+
+/* تماس */
+.contact-box {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #1B2A46;
+    border: 1px solid #293955;
+    border-radius: 14px;
+    padding: 22px 18px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 22px;
+}
+
+.contact-icon {
+    color: #E49C05;
+    font-size: 27px;
+}
+
+.contact-item h3 {
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+.contact-item p {
+
+    font-size: 12px;
+
+    margin-bottom: 0;
+
+    overflow-wrap: anywhere;
+
+}
+
+.contact-btn {
+
+    display: block;
+
+    text-align: center;
+
+    width: 100%;
+
+    margin-top: 12px;
+
+}
+
+/* پایین صفحه */
+
+.footer {
+
+    text-align: center;
+
+    padding: 28px 16px;
+
+    background-color: #0B1528;
+
+    border-top: 1px solid #293955;
+
+}
+
+.footer-logo {
+
+    width: 55px;
+
+    height: 55px;
+
+    object-fit: contain;
+
+    margin: 0 auto 10px;
+
+}
+
+.footer p {
+
+    color: #FFFFFF;
+
+    font-size: 14px;
+
+    margin-bottom: 4px;
+
+}
+
+.footer span {
+
+    color: #9EABC0;
+
+    font-size: 11px;
+
+}
+
+/* تبلت و کامپیوتر */
+
+@media (min-width: 768px) {
+
+    .header {
+
+        display: flex;
+
+        justify-content: space-between;
+
+        align-items: center;
+
+        padding: 14px 5%;
+
+        gap: 20px;
+
+    }
+
+    .nav {
+
+        padding: 0;
+
+        flex-wrap: wrap;
+
+    }
+
+    .nav a {
+
+        font-size: 13px;
+
+    }
+
+    .hero {
+
+        min-height: 560px;
+
+        padding: 60px 8%;
+
+    }
+
+    .hero h1 {
+
+        font-size: 46px;
+
+    }
+
+    .hero p {
+
+        font-size: 16px;
+
+    }
+
+    .section {
+
+        padding: 65px 8%;
+
+    }
+
+    .services-grid {
+
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+
+        gap: 18px;
+
+    }
+
+    .service-card img {
+
+        height: 170px;
+
+    }
+
+    .card-content h3 {
+
+        font-size: 16px;
+
+    }
+
+    .card-content p {
+
+        font-size: 12px;
+
+    }
+
+    .gallery-grid {
+
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+
+        gap: 16px;
+
+    }
+
+    .gallery-grid img,
+
+    .gallery-grid img:first-child {
+
+        height: 240px;
+
+        grid-column: auto;
+
+    }
+
+    .section-title h2 {
+
+        font-size: 30px;
+
+    }
+
+}
+/* مرتب کردن بخش اینستاگرام */
+.instagram-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 12px;
+    margin-bottom: 18px;
+}
+
+.instagram-icon {
+    color: #E49C05;
+    font-size: 32px;
+    line-height: 1;
+    flex-shrink: 0;
+}
+
+.instagram-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.instagram-info h3 {
+    margin: 0;
+}
+
+
+.icon {
+    color: #E49C05;
+    /* padding: 10px; */
+    font-size: 28px;
+}
+
+.instagram-link:hover {
+    color: white;
+}
